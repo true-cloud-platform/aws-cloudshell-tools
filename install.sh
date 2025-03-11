@@ -19,12 +19,15 @@ wget https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2F
 wget https://github.com/junegunn/fzf/releases/download/v0.58.0/fzf-0.58.0-linux_amd64.tar.gz -O -| tar -xz && mv fzf ~/.local/bin/fzf
 
 #FluxCD
-wget https://github.com/fluxcd/flux2/releases/download/v2.4.0/flux_2.4.0_linux_amd64.tar.gz -O -| tar -xz && mv flux ~/.local/bin/flux
+wget https://github.com/fluxcd/flux2/releases/download/v2.5.1/flux_2.5.1_linux_amd64.tar.gz -O -| tar -xz && mv flux ~/.local/bin/flux
 
 #SOPS
 wget https://github.com/getsops/sops/releases/download/v3.9.3/sops-v3.9.3.linux.amd64 -O ~/.local/bin/sops && chmod +x ~/.local/bin/sops
 
 #EKSctl
 wget https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_Linux_amd64.tar.gz -O -| tar -xz && mv eksctl ~/.local/bin/eksctl
+
+
+
 
 
