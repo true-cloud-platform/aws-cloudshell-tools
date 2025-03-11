@@ -32,5 +32,7 @@ wget https://github.com/getsops/sops/releases/download/v3.9.3/sops-v3.9.3.linux.
 wget https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_Linux_amd64.tar.gz -O -| tar -xz && mv eksctl ~/.local/bin/eksctl
 
 # Install dotfiles
-cp -r ${SCRIPT_DIR}/dotfiles/home/* ~/
+cp ${SCRIPT_DIR}/dotfiles/home/.bashrc ~/
+cp -r ${SCRIPT_DIR}/dotfiles/home/.fzf/ ~/
+cp -r ${SCRIPT_DIR}/dotfiles/home/.ps1/ ~/
 
