@@ -58,7 +58,7 @@ tabs 2
 . ~/.ps1/color-scheme.sh
 
 # Import prompt functions
-. ~/..ps1/k8s-ps1.sh
+. ~/.ps1/k8s-ps1.sh
 
 
 ####################################
