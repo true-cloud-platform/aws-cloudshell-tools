@@ -15,7 +15,7 @@
 
 **Additional installed tools**
 
-- `bash
+- `bash`
 - `yq`
 - `helm`
 - `kustomize`
@@ -23,5 +23,11 @@
 - `fluxcd`
 
 ---
+## Installation
 
+```sh
+git clone https://github.com/true-cloud-platform/aws-cloudshell-tools.git .cloudshell-tools
+
+.cloudshell-tools/install.sh
+```
 ---
