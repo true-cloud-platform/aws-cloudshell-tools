@@ -79,6 +79,21 @@ select_eks_cluster() {
   echo $selected_cluster
 }
 
+## - Function select namespace
+select_k8s_namespace() {
+
+  # Get list of namespaces from k8s
+  namespaces=$(
+    kubectl get ns -o name | awk -F / '{print $2}'
+  )
+
+  # Use fzf for nameapce selection
+  local selected_namespace=$(printf "%s\n" "${namespaces[@]}" | fzf --prompt="Choose your namespace > " --header="Available Namespaces:" --height=20 --border)
+
+  # return
+  echo $selected_namespace
+
+}
 
 ## - Function update-kubeconfig
 update_kubeconfig() {

@@ -101,7 +101,8 @@ alias ks='update_kubeconfig'
 
 #alias ns='kubens'
 function ns {
-  selected_ns=$(kubectl get ns -o name |awk -F / '{print $2}' | fzf)
+  # selected_ns=$(kubectl get ns -o name |awk -F / '{print $2}' | fzf)
+  selected_ns=$(select_k8s_namespace)
   kubectl config set-context --current --namespace=$selected_ns
 }
 
