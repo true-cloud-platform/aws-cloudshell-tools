@@ -4,7 +4,7 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-  . /etc/bashrc
+  source /etc/bashrc
 fi
 
 # User specific environment
@@ -55,10 +55,10 @@ set -o vi
 tabs 2
 
 # Solarized terminal color code
-. ~/.ps1/color-scheme.sh
+source ~/.ps1/color-scheme.sh
 
 # Import prompt functions
-. ~/.ps1/k8s-ps1.sh
+source ~/.ps1/k8s-ps1.sh
 
 
 ####################################
@@ -79,7 +79,7 @@ alias k='kubectl'
 complete -o default -F __start_kubectl k
 
 # eksctl
-. <(eksctl completion bash)
+source <(eksctl completion bash)
 
 # kubeselect kubens
 # alias ks='eval $(kubeselect select)'
