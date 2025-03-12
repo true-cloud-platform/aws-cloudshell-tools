@@ -85,7 +85,7 @@ update_kubeconfig() {
   # Get the selected cluster
   local selected_cluster=$(select_eks_cluster)
 
-  kubeconfig_file="$(mktemp -t "${selected_cluster}.yaml")"
+  kubeconfig_file="$(mktemp -t "kubeconfig-${selected_cluster}.XXXXXX")"
 
   # Update kubeconfig
   aws eks update-kubeconfig --name $selected_cluster --kubeconfig $kubeconfig_file
