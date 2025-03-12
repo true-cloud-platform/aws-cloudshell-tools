@@ -31,10 +31,11 @@ git clone https://github.com/true-cloud-platform/aws-cloudshell-tools.git .cloud
 
 ## - Install tools
 .cloudshell-tools/install.sh
+```
 
-## - Restart cloudshell
+Restart cloudshell
+```sh
 exit
-
 ```
 
 ---
@@ -42,7 +43,7 @@ exit
 
 ### Aliases command
 
-- `ks` Select K8S cluster.
+- `ks` select K8S cluster.
 - `ns` select namespace.
 - `k` for `kubectl`
 
