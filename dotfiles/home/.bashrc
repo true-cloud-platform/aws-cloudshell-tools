@@ -75,8 +75,21 @@ git config --global credential.helper '!aws codecommit credential-helper $@'
 git config --global credential.UseHttpPath true
 
 # kubectl
+source <(kubectl completion bash)
 alias k='kubectl'
 complete -o default -F __start_kubectl k
+
+# helm
+source <(helm completion bash)
+
+# kustomize
+complete -o default -C kustomize kustomize
+
+# flux
+complete -o default -C flux flux
+
+# sops
+complete -o default -C sops sops
 
 # eksctl
 source <(eksctl completion bash)

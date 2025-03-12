@@ -73,7 +73,7 @@ select_eks_cluster() {
   )
 
   # Use fzf for cluster selection
-  local selected_cluster=$(printf "%s\n" "${clusters[@]}" | fzf --prompt="Choose your cluster > " --header="Available Clusters:" --height=10 --border)
+  local selected_cluster=$(printf "%s\n" "${clusters[@]}" | fzf --prompt="Choose your cluster > " --header="Available Clusters:" --height=20 --border)
 
   # return
   echo $selected_cluster
