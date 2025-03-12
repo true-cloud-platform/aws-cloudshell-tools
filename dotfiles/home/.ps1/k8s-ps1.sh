@@ -101,6 +101,11 @@ update_kubeconfig() {
 
 
 ## - Main scripts
+# PS1
+PLAIN_PS1='\n\[$bracketcolor\][\[$usercolor\]${p_user}\[$fg_green\]$p_namespace \[$cwdcolor\]\W\[$bracketcolor\]] \[${fg_cyan}\]${g_group_open}\[${fg_green}\]${g_branch_icon}\[${fg_cyan}\]${g_branch}\[${fg_green}\]${g_upstream}\[${fg_yellow}\]${g_ahead_icon}\[${fg_cyan}\]${g_ahead}\[${fg_yellow}\]${g_behind_icon}\[${fg_cyan}\]${g_behind}\[${fg_red}\]${g_change}\[${fg_yellow}\]${g_untrack}\[${fg_cyan}\]${g_group_close}\[${reset}\]\[$fg_white\]\$\[$resetcolor\] '
+
+MODERN_PS1='\n \[$bracketcolor\][\[$usercolor\]${p_user}\[$fg_green\]$p_namespace \[$cwdcolor\]\W\[$bracketcolor\]] \[${fg_cyan}\]${g_group_open}\[${fg_green}\]${g_branch_icon}\[${fg_cyan}\]${g_branch}\[${fg_green}\]${g_upstream}\[${fg_yellow}\]${g_ahead_icon}\[${fg_cyan}\]${g_ahead}\[${fg_yellow}\]${g_behind_icon}\[${fg_cyan}\]${g_behind}\[${fg_red}\]${g_change}\[${fg_yellow}\]${g_untrack}\[${fg_cyan}\]${g_group_close}\[${reset}\]\n\[$fg_white\] $\[$resetcolor\] '
+
 
 
 
